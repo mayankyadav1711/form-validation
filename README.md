@@ -49,36 +49,3 @@ To run this project locally:
    npm start
    ```
 
-## Project Structure
-```
-Form-Validation
-
-├─ public
-│  ├─ favicon.ico
-│  ├─ index.html
-│  ├─ logo192.png
-│  ├─ logo512.png
-│  ├─ manifest.json
-│  └─ robots.txt
-├─ README.md
-└─ src
-   ├─ App.css
-   ├─ App.js
-   ├─ App.test.js
-   ├─ components
-   │  ├─ Boxes.js
-   │  ├─ CodeSnippet.js
-   │  ├─ CodeSnippets.js
-   │  ├─ Comparision.js
-   │  ├─ Formik_Yup.js
-   │  ├─ Home.js
-   │  └─ ReactHookForm_Zod.js
-   ├─ index.css
-   ├─ index.js
-   ├─ logo.svg
-   ├─ reportWebVitals.js
-   └─ setupTests.js
-├─ .gitignore
-├─ package-lock.json
-├─ package.json
-```
