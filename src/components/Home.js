@@ -3,6 +3,7 @@ import Boxes from "./Boxes";
 import Comparison from "./Comparision";
 import CodeSnippets from "./CodeSnippets";
 import ScrollToTop from "./ScrollToTop";
+import Footer from "./Footer";
 
 const FeatureCard = ({ title, description, bgColor }) => (
   <div className={`${bgColor} p-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105`}>
@@ -138,26 +139,54 @@ const Home = () => {
       </section>
 
       <section className="w-full max-w-6xl mb-16">
-        <h2 className="text-3xl font-semibold mb-6 text-center">FAQ</h2>
-        <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-          <FAQItem 
-            question="Which validation library should I choose?" 
-            answer="The choice depends on your specific needs. Formik with Yup is great for its simplicity, while React Hook Form with Zod offers better performance and TypeScript integration."
-          />
-          <FAQItem 
-            question="Can I use these libraries with TypeScript?" 
-            answer="Yes, both Formik/Yup and React Hook Form/Zod have excellent TypeScript support."
-          />
-          <FAQItem 
-            question="Do these libraries work with React Native?" 
-            answer="Yes, both libraries are compatible with React Native for mobile app development."
-          />
-        </div>
-      </section>
+  <h2 className="text-3xl font-semibold mb-6 text-center">FAQ</h2>
+  <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+    <FAQItem 
+      question="Which validation library should I choose?" 
+      answer="The choice depends on your specific needs. Formik with Yup is great for its simplicity, while React Hook Form with Zod offers better performance and TypeScript integration."
+    />
+    <FAQItem 
+      question="Can I use these libraries with TypeScript?" 
+      answer="Yes, both Formik/Yup and React Hook Form/Zod have excellent TypeScript support."
+    />
+    <FAQItem 
+      question="Do these libraries work with React Native?" 
+      answer="Yes, both libraries are compatible with React Native for mobile app development."
+    />
+    <FAQItem 
+      question="How do I handle asynchronous validation?" 
+      answer="Formik/Yup supports asynchronous validation using Yup's `validate` function. React Hook Form/Zod also supports async validation using custom resolver functions."
+    />
+ 
+    <FAQItem 
+      question="Are these libraries suitable for large-scale forms?" 
+      answer="Yes, both libraries handle large-scale forms efficiently. React Hook Form/Zod is known for its lightweight footprint and performance."
+    />
+    <FAQItem 
+      question="How can I reset or clear form fields?" 
+      answer="Formik provides a `resetForm()` method to reset form fields. React Hook Form allows resetting form values by resetting the form state."
+    />
+    <FAQItem 
+      question="Do these libraries handle file uploads?" 
+      answer="Yes, both libraries support file uploads. Formik/Yup can manage file uploads with custom validation. React Hook Form/Zod integrates well with file input components."
+    />
+    <FAQItem 
+      question="What are the alternatives to Formik and React Hook Form?" 
+      answer="Alternatives include libraries like Final Form, Redux Form for Redux users, and native HTML5 form validation for simpler needs."
+    />
+    <FAQItem 
+      question="How can I handle form submission errors?" 
+      answer="Both libraries provide mechanisms to handle submission errors. Formik uses the `onSubmit` callback, while React Hook Form exposes error states for handling."
+    />
+    <FAQItem 
+      question="Can I use Formik/Yup and React Hook Form/Zod together in one project?" 
+      answer="While you can technically use both, it's generally recommended to choose one form library per project to maintain consistency."
+    />
+  </div>
+</section>
 
-      <footer className="w-full max-w-6xl text-center text-gray-600 mt-8 pb-4">
-        <p>&copy;  Contributed by <span className="font-bold"> <a href="https://www.linkedin.com/in/mayankyadav17/" target="_blank"> Mayank Yadav</a> </span></p>
-      </footer>
+
+      <Footer/>
 
       <ScrollToTop />
     </div>
