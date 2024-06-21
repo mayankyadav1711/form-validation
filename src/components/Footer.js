@@ -15,7 +15,7 @@ const Footer = () => {
 
             <div>
               <h3 className="text-xl font-bold text-gray-800"> <a href='https://mayank-dev.vercel.app' target='_blank'> Mayank Yadav </a></h3>
-              <p className="text-gray-600">React Developer</p>
+              <p className="text-gray-600">Full Stack Developer</p>
             </div>
           </div>
           <div className="flex space-x-4">
