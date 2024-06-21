@@ -1,4 +1,4 @@
-<figure><img src="https://i.ibb.co/vD8HDjh/image.png" alt="" style="background:white"> </figure> 
+<figure><img src="./public/snapshot.png" alt="" style="background:white"> </figure> 
 
 
 # Form Validation with Formik/Yup and React Hook Form/Zod
