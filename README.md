@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# Form Validation with Formik/Yup and React Hook Form/Zod
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This project demonstrates how to manage forms using two popular form management libraries in React: Formik with Yup for validation, and React Hook Form with Zod for validation. It provides examples and comparisons between the two approaches, showcasing their usage for handling complex forms with validation.
 
-In the project directory, you can run:
+## Technologies Used
 
-### `npm start`
+- **React**: A JavaScript library for building user interfaces.
+- **Formik**: A popular form management library for React applications.
+- **Yup**: A JavaScript schema builder for value parsing and validation.
+- **React Hook Form**: A lightweight and flexible form validation library for React.
+- **Zod**: A TypeScript-first schema declaration and validation library.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Formik & Yup Example**:
+  - Implements a registration form with various fields like username, email, password, age, website, phone, address, etc.
+  - Provides validation using Yup schema validation.
+  - Handles form submission and displays validation errors.
 
-### `npm test`
+- **React Hook Form & Zod Example**:
+  - Implements a similar registration form using React Hook Form and Zod.
+  - Uses a different approach to validation with Zod schema.
+  - Manages form state and validation dynamically.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Modal for Form Submission Confirmation**:
+  - Upon successful form submission, displays a pop-up modal showing the submitted data.
+  - Styled to enhance user experience and readability.
 
-### `npm run build`
+## Project Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To run this project locally:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/mayankyadav1711/form-validation.git
+   cd form-validation
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server::
+   ```bash
+   npm start
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Project Structure
+```
+Form-Validation
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+├─ public
+│  ├─ favicon.ico
+│  ├─ index.html
+│  ├─ logo192.png
+│  ├─ logo512.png
+│  ├─ manifest.json
+│  └─ robots.txt
+├─ README.md
+└─ src
+   ├─ App.css
+   ├─ App.js
+   ├─ App.test.js
+   ├─ components
+   │  ├─ Boxes.js
+   │  ├─ CodeSnippet.js
+   │  ├─ CodeSnippets.js
+   │  ├─ Comparision.js
+   │  ├─ Formik_Yup.js
+   │  ├─ Home.js
+   │  └─ ReactHookForm_Zod.js
+   ├─ index.css
+   ├─ index.js
+   ├─ logo.svg
+   ├─ reportWebVitals.js
+   └─ setupTests.js
+├─ .gitignore
+├─ package-lock.json
+├─ package.json
+```
