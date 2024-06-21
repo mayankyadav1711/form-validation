@@ -96,24 +96,24 @@ const ReactHookFormZodForm = () => {
 };
 `;
 
-  return (
-    <div className="w-full max-w-6xl bg-white p-8 rounded-lg shadow-lg mt-16">
- <h2 className="text-2xl font-bold mb-4 text-center">
-  Code Snippets for Formik/Yup and React Hook Form/Zod
-</h2>
-    <div className="flex flex-row justify-around w-full max-w-6xl mb-16">
+return (
+  <div className="w-full max-w-6xl bg-white p-4 md:p-8 rounded-lg shadow-lg mt-8 md:mt-16">
+    <h2 className="text-xl md:text-2xl font-bold mb-4 text-center">
+      Code Snippets for Formik/Yup and React Hook Form/Zod
+    </h2>
+    <div className="flex flex-col md:flex-row justify-around w-full max-w-6xl mb-8 md:mb-16 space-y-8 md:space-y-0 md:space-x-8">
       {/* Formik/Yup Code Snippet */}
-      <div className="bg-sky-100 p-8 rounded-lg shadow-lg w-full md:w-1/2 m-10 overflow-auto">
+      <div className="bg-sky-100 p-4 md:p-8 rounded-lg shadow-lg w-full md:w-1/2 overflow-auto">
         <CodeSnippet title="Formik & Yup Example" code={formikYupCode} language="jsx" />
       </div>
 
       {/* React Hook Form/Zod Code Snippet */}
-      <div className="bg-rose-100 p-8 rounded-lg shadow-lg w-full md:w-1/2 m-10 overflow-auto">
+      <div className="bg-rose-100 p-4 md:p-8 rounded-lg shadow-lg w-full md:w-1/2 overflow-auto">
         <CodeSnippet title="React Hook Form & Zod Example" code={reactHookFormZodCode} language="jsx" />
       </div>
     </div>
-    </div>
-  );
+  </div>
+);
 };
 
 export default CodeSnippets;
